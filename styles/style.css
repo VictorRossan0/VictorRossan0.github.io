@@ -29,14 +29,16 @@ header {
     text-decoration: none;
 }
 
-.social-links a img {
+.social-links a i {
     width: 24px;
     height: 24px;
     border-radius: 50%;
+    color: #64ffda; /* Cor padrão dos ícones */
     transition: transform 0.3s;
 }
 
-.social-links a:hover img {
+.social-links a i:hover {
+    color: #52e0c4; /* Cor dos ícones ao passar o mouse */
     transform: scale(1.2);
 }
 
