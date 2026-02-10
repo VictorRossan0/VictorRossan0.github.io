@@ -5,6 +5,7 @@ import { About } from "./pages/About";
 import { Experience } from "./pages/Experience";
 import { Project } from "./pages/Project";
 import { Work } from "./pages/Work";
+import { Contact } from "./pages/Contact";
 import { Header } from "./components/Header/Header";
 import { Footer } from "./components/Footer/Footer";
 
@@ -19,6 +20,7 @@ export default function App() {
         <Route path="/experience" element={<Experience />} />
         <Route path="/work" element={<Work />} />
         <Route path="/projects/:id" element={<Project />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
 
       <Footer />

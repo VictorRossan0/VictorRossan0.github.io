@@ -33,6 +33,11 @@ export function Header() {
             </NavLink>
           </li>
 
+          <li>
+            <NavLink to="/contact">
+              Contato
+            </NavLink>
+          </li>
 
           <li className="resume-wrapper">
             <a

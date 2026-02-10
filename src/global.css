@@ -358,6 +358,31 @@ footer p {
 }
 
 /* =========================
+   CONTACT
+========================= */
+.contact-links {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.contact-links .cta-button {
+    padding: 0.7rem 1.6rem;
+    border-radius: 8px;
+    background-color: #38bdf8;
+    color: #020617;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.contact-links .cta-button:hover {
+    background-color: #0ea5e9;
+    transform: translateY(-3px);
+}
+
+/* =========================
    CURRÍCULO
 ========================= */
 
@@ -402,6 +427,38 @@ footer p {
     background-color: #1e293b;
     transform: translateY(-2px);
 }
+
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.contact-links .cta-button {
+    padding: 0.6rem 1.4rem;
+    border-radius: 6px;
+    background-color: #38bdf8;
+    color: #020617;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.contact-links .cta-button:hover {
+    background-color: #0ea5e9;
+    transform: translateY(-2px);
+}
+
+/* destaque sutil para WhatsApp */
+.contact-links .cta-button:last-child {
+    background-color: #22c55e;
+}
+
+.contact-links .cta-button:last-child:hover {
+    background-color: #16a34a;
+}
+
 
 @media (max-width: 768px) {
     .resume-wrapper {
