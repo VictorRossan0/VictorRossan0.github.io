@@ -1,0 +1,410 @@
+/* =========================
+   RESET & BASE
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+    background-color: #0f172a;
+    color: #e5e7eb;
+    line-height: 1.6;
+}
+
+/* =========================
+   LINKS & TEXTOS
+========================= */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #38bdf8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: #f8fafc;
+    font-weight: 600;
+}
+
+p {
+    color: #cbd5f5;
+    margin-bottom: 1rem;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* =========================
+   HEADER / NAVBAR
+========================= */
+header {
+    background-color: #020617;
+    border-bottom: 1px solid #1e293b;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.company-name {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #38bdf8;
+}
+
+/* Navegação */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+}
+
+.nav-links a {
+    color: #e5e7eb;
+    font-size: 1rem;
+    position: relative;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+/* Estado ativo (NavLink) */
+.nav-links a.active {
+    color: #38bdf8;
+}
+
+.nav-links a.active::after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #38bdf8;
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+main {
+    min-height: calc(100vh - 160px);
+}
+
+/* =========================
+   HOME / INTRO
+========================= */
+.intro {
+    max-width: 720px;
+    margin: 4rem auto 0;
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.intro h1 span {
+    color: #38bdf8;
+}
+
+.intro h2 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #94a3b8;
+    margin-bottom: 1.5rem;
+}
+
+/* =========================
+   CONTENT SECTIONS
+========================= */
+.content {
+    margin-top: 3rem;
+}
+
+.content h2 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* =========================
+   PROJECTS GRID
+========================= */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* =========================
+   PROJECT CARD
+========================= */
+.project.card {
+    background-color: #020617;
+    border: 1px solid #1e293b;
+    border-radius: 10px;
+    padding: 1.5rem;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project.card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.project.card p {
+    font-size: 0.95rem;
+    color: #94a3b8;
+    margin-bottom: 1rem;
+}
+
+.project.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(56, 189, 248, 0.15);
+}
+
+.project.card .btn {
+    display: inline-block;
+    background-color: #38bdf8;
+    color: #020617;
+    font-weight: 600;
+    padding: 0.45rem 1.2rem;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.project.card .btn:hover {
+    background-color: #0ea5e9;
+}
+
+/* =========================
+   PROJECT DETAIL
+========================= */
+.project-links {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.project-links .cta-button {
+    padding: 0.6rem 1.4rem;
+    border-radius: 6px;
+    background-color: #38bdf8;
+    color: #020617;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.project-links .cta-button:hover {
+    background-color: #0ea5e9;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   SOCIAL LINKS
+========================= */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-top: 1rem;
+}
+
+.social-links a {
+    font-size: 1.4rem;
+    color: #e5e7eb;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.social-links a:hover {
+    color: #38bdf8;
+    transform: translateY(-3px);
+}
+
+/* =========================
+   ABOUT PAGE
+========================= */
+.content.text-center {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.content.text-center p {
+    font-size: 1.05rem;
+}
+
+/* =========================
+   EXPERIENCE
+========================= */
+.experience-card {
+    background-color: #020617;
+    border: 1px solid #1e293b;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.experience-card h3 {
+    margin-bottom: 0.3rem;
+}
+
+.experience-card .company {
+    font-weight: 600;
+    color: #38bdf8;
+}
+
+.experience-card .period,
+.experience-card .location {
+    font-size: 0.9rem;
+    color: #94a3b8;
+}
+
+.experience-card ul {
+    margin-top: 1rem;
+    padding-left: 1.2rem;
+}
+
+.experience-card li {
+    margin-bottom: 0.6rem;
+}
+
+.tech-stack {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tech-stack .badge {
+    background-color: #1e293b;
+    color: #38bdf8;
+    padding: 0.3rem 0.7rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    background-color: #020617;
+    padding: 2rem 1rem;
+    border-top: 1px solid #1e293b;
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: #94a3b8;
+}
+
+/* =========================
+   UTILITIES
+========================= */
+.text-center {
+    text-align: center;
+}
+
+.mt-5 {
+    margin-top: 3rem;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+        gap: 16px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .intro h1 {
+        font-size: 2rem;
+    }
+}
+
+/* =========================
+   CURRÍCULO
+========================= */
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.resume-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.resume-link {
+    padding: 0.4rem 1rem;
+    border: 1px solid #38bdf8;
+    border-radius: 6px;
+    color: #38bdf8;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.resume-link:hover {
+    background-color: #38bdf8;
+    color: #020617;
+}
+
+.resume-download {
+    font-size: 0.95rem;
+    color: #38bdf8;
+    padding: 0.35rem 0.6rem;
+    border-radius: 6px;
+    border: 1px solid #1e293b;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.resume-download:hover {
+    background-color: #1e293b;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .resume-wrapper {
+        justify-content: center;
+    }
+}
