@@ -82,5 +82,28 @@ export const projects = [
       "Validação por responsáveis",
       "Registro seguro de informações"
     ]
+  },
+  {
+    id: "salomix-saas-gestao-saloes",
+    title: "Salomix - SaaS de Gestão para Salões",
+    description: "SaaS multi-tenant desenvolvido com Lovable + Supabase.",
+    longDescription:
+      "Aplicação SaaS multi-tenant arquitetada utilizando Lovable como camada de aceleração de frontend (React) e Supabase como Backend-as-a-Service (Auth, PostgreSQL e Row Level Security). O projeto simula um ambiente real de gestão para salões, com isolamento de dados por empresa, controle de roles e estrutura preparada para crescimento horizontal e expansão modular. A escolha por Lovable permitiu foco na modelagem arquitetural e regras de negócio, enquanto o Supabase garantiu segurança no nível do banco via RLS.",
+    technologies: [
+      "Lovable (React)",
+      "Supabase (Auth + PostgreSQL)",
+      "Row Level Security (RLS)",
+      "Zustand",
+      "React Query"
+    ],
+    features: [
+      "Arquitetura SaaS multi-tenant",
+      "Supabase Auth (Email/Password)",
+      "Isolamento de dados via RLS",
+      "Criação automática de empresa no cadastro",
+      "Controle de roles (admin/funcionário)",
+      "Gestão financeira e de serviços",
+      "Rotas protegidas com controle reativo de sessão"
+    ]
   }
 ];
