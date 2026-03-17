@@ -16,16 +16,37 @@ export function ProjectDetail() {
     }
 
     return (
-        <section className="content">
+        <section className="content project-detail">
             <h2>{project.title}</h2>
 
-            <p>{project.description}</p>
+            <p className="project-description">{project.description}</p>
 
-            <ul>
-                <li>
-                    <strong>Tecnologias:</strong> {project.tech.join(", ")}
-                </li>
-            </ul>
+            {project.problem && (
+                <div className="project-section">
+                    <h3>Problema</h3>
+                    <p>{project.problem}</p>
+                </div>
+            )}
+
+            {project.solution && (
+                <div className="project-section">
+                    <h3>Solução</h3>
+                    <p>{project.solution}</p>
+                </div>
+            )}
+
+            {project.tech && (
+                <div className="project-section">
+                    <h3>Tecnologias</h3>
+                    <div className="tech-stack">
+                        {project.tech.map((tech, index) => (
+                            <span key={index} className="badge">
+                                {tech}
+                            </span>
+                        ))}
+                    </div>
+                </div>
+            )}
 
             <div className="project-links">
                 {project.repo && (
@@ -35,7 +56,7 @@ export function ProjectDetail() {
                         rel="noopener noreferrer"
                         className="cta-button"
                     >
-                        Repositório
+                        Ver código
                     </a>
                 )}
 
@@ -46,7 +67,7 @@ export function ProjectDetail() {
                         rel="noopener noreferrer"
                         className="cta-button"
                     >
-                        Demo
+                        Ver projeto
                     </a>
                 )}
             </div>

@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 export function Header() {
   return (
     <header>
-      <nav className="container">
+      <nav className="container" aria-label="Navegação principal">
         <NavLink to="/" className="company-name">
           Victor Rossano
         </NavLink>
@@ -46,16 +46,7 @@ export function Header() {
               rel="noopener noreferrer"
               className="resume-link"
             >
-              Currículo
-            </a>
-
-            <a
-              href="/Curriculo_Victor.pdf"
-              download
-              className="resume-download"
-              title="Baixar currículo"
-            >
-              ⬇
+              Currículo ↓
             </a>
           </li>
         </ul>

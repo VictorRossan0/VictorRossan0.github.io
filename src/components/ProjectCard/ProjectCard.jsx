@@ -1,14 +1,25 @@
-// src/components/ProjectCard/ProjectCard.jsx
 import { Link } from "react-router-dom";
 
 export function ProjectCard({ project }) {
   return (
-    <div className="project card p-3 mb-4">
-      <h3>{project.title}</h3>
-      <p>{project.description}</p>
+    <div className="project card">
+      <div className="project-content">
+        <h3>{project.title}</h3>
+        <p>{project.description}</p>
+      </div>
 
-      <Link to={`/projects/${project.id}`} className="btn btn-primary">
-        Veja mais
+      {project.techs && (
+        <div className="tech-stack">
+          {project.techs.map((tech, index) => (
+            <span key={index} className="badge">
+              {tech}
+            </span>
+          ))}
+        </div>
+      )}
+
+      <Link to={`/projects/${project.id}`} className="btn">
+        Ver detalhes →
       </Link>
     </div>
   );

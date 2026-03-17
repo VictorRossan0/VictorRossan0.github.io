@@ -6,17 +6,23 @@ export function Work() {
   return (
     <main className="container mt-5">
       <section className="content">
-        <h2 className="text-center">Trabalhos</h2>
+        <h2 className="text-center mb-3">Projetos</h2>
 
-        <p>
-          Abaixo estão alguns projetos relevantes nos quais atuei, com foco em
-          backend, APIs e automação.
-        </p>
-        <p>
-          <strong>Observação:</strong> Por políticas internas, alguns projetos não
-          possuem material visual público.
+        <p className="text-center mb-4">
+          💡 Experiência prática com sistemas críticos, automações inteligentes e arquitetura multi-tenant.
         </p>
 
+        <p className="text-center mb-3">
+          Projetos focados em backend, APIs, automação e soluções orientadas a problemas reais de negócio.
+        </p>
+
+        <p className="text-center mb-4">
+          Projetos que vão desde sistemas corporativos até automações com IA e arquiteturas SaaS escaláveis.
+        </p>
+
+        <p className="text-center mb-5 text-muted">
+          * Parte dos projetos não possui interface pública devido a políticas internas e confidencialidade.
+        </p>
 
         <div className="projects">
           {projects.map(project => (

@@ -6,18 +6,16 @@ export function Home() {
           Olá, eu sou <span>Victor Rossano</span>
         </h1>
 
-        <h2>Desenvolvedor Back-End</h2>
+        <h2>Backend Engineer focado em Automação e IA</h2>
 
         <p>
-          Desenvolvedor Back-End com experiência em Laravel, PHP e Python,
-          atuando na construção e manutenção de APIs REST e sistemas
-          corporativos.
+          Ajudo empresas a automatizar processos e integrar sistemas,
+          reduzindo tarefas manuais e aumentando a eficiência operacional.
         </p>
 
         <p>
-          Experiência em ambientes ágeis, projetos de longo prazo e contextos
-          críticos de negócio, sempre com foco em qualidade, organização e
-          evolução contínua do código.
+          Trabalho com Python, Laravel, APIs REST, n8n e integrações,
+          construindo soluções escaláveis e orientadas a negócio.
         </p>
       </section>
     </main>

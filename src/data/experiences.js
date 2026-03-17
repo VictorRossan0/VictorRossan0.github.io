@@ -1,17 +1,17 @@
 export const experiences = [
     {
-        role: "Desenvolvedor Web Backend Jr",
+        role: "Desenvolvedor Backend",
         company: "Fidelizi",
         type: "Tempo integral",
         period: "nov de 2025 - jan de 2026 · 3 meses",
         location: "Remoto · Campinas, SP",
         stack: ["Laravel", "PHP", "MySQL", "Git"],
         description: [
-            "Desenvolvimento e manutenção de APIs REST utilizando PHP (Laravel), com foco em regras de negócio e integração com banco de dados MySQL.",
-            "Participação ativa na migração de sistemas do Laravel 5.7 para versões mais atuais, aplicando boas práticas de arquitetura e organização de código.",
-            "Correção de bugs, refatorações e ajustes visando melhoria de desempenho, legibilidade e manutenção.",
-            "Atuação em ambiente 100% remoto, com autonomia, comunicação assíncrona e adaptação a rotinas ágeis.",
-            "Backend utilizando Laravel exclusivamente como API, reforçando conceitos de arquitetura orientada a serviços."
+            "Desenvolvimento e manutenção de APIs REST com Laravel, atuando diretamente em regras de negócio e integração com banco de dados.",
+            "Participação na migração de sistemas do Laravel 5.7 para versões mais recentes, aplicando melhorias de arquitetura, organização e padronização de código.",
+            "Correção de bugs e refatorações com foco em performance, legibilidade e manutenção a longo prazo.",
+            "Atuação em ambiente 100% remoto com comunicação assíncrona, alta autonomia e colaboração em times ágeis.",
+            "Desenvolvimento de backend orientado a serviços, utilizando Laravel como API desacoplada."
         ]
     },
     {
@@ -22,12 +22,13 @@ export const experiences = [
         location: "Híbrido · Campinas, SP",
         stack: ["Laravel", "Python", "PostgreSQL", "MySQL"],
         description: [
-            "Criação e manutenção de aplicações utilizando Laravel e Python.",
-            "Desenvolvimento de novas funcionalidades, correção de bugs e integração com APIs.",
-            "Colaboração com equipes ágeis, participação em sprints, refinamentos e retrospectivas.",
-            "Escrita e atualização de documentação técnica.",
-            "Realização de testes unitários e de integração para garantir qualidade antes da entrega.",
-            "Diagnóstico e resolução de problemas em produção, propondo soluções técnicas."
+            "Desenvolvimento e manutenção de aplicações backend utilizando Laravel e Python em sistemas corporativos.",
+            "Implementação de novas funcionalidades, integrações com APIs e melhorias contínuas em sistemas existentes.",
+            "Atuação em correção de bugs e resolução de problemas em produção, garantindo estabilidade e continuidade dos serviços.",
+            "Participação ativa em equipes ágeis, contribuindo em refinamentos, planejamento de sprints e melhorias de processo.",
+            "Escrita e manutenção de documentação técnica para suporte ao time e continuidade dos projetos.",
+            "Realização de testes unitários e de integração, garantindo qualidade e confiabilidade nas entregas.",
+            "Exploração e desenvolvimento de soluções de automação de processos utilizando ferramentas como n8n, com foco em aumento de produtividade e redução de tarefas manuais."
         ]
     }
 ];

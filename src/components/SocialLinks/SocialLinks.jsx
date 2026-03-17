@@ -6,6 +6,7 @@ export function SocialLinks() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
+                title="LinkedIn"
             >
                 <i className="fab fa-linkedin"></i>
             </a>
@@ -15,11 +16,16 @@ export function SocialLinks() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
+                title="GitHub"
             >
                 <i className="fab fa-github"></i>
             </a>
 
-            <a href="mailto:victorrca2010@gmail.com" aria-label="Email">
+            <a
+                href="mailto:victorrca2010@gmail.com"
+                aria-label="Email"
+                title="Email"
+            >
                 <i className="fas fa-envelope"></i>
             </a>
 
@@ -28,6 +34,7 @@ export function SocialLinks() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="WhatsApp"
+                title="WhatsApp"
             >
                 <i className="fab fa-whatsapp"></i>
             </a>

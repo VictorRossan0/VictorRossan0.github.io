@@ -1,11 +1,15 @@
 // src/data/projects.js
+
 export const projects = [
   {
     id: "gestao-atestados",
     title: "Sistema de Gestão de Atestados",
-    description: "Aplicação para gerenciamento de atestados médicos.",
-    longDescription:
-      "Sistema desenvolvido para cadastro, análise e aprovação de atestados médicos por colaboradores e supervisores, com foco em segurança e controle de informações sensíveis.",
+    problem:
+      "Processo manual e descentralizado para envio e validação de atestados médicos, gerando retrabalho e risco de inconsistência de dados.",
+    solution:
+      "Desenvolvimento de sistema backend com Laravel para centralizar o envio, análise e aprovação de atestados, garantindo controle e rastreabilidade das informações.",
+    result:
+      "Melhoria na organização dos dados, redução de erros operacionais e maior eficiência no fluxo de validação.",
     technologies: ["Laravel", "MySQL"],
     features: [
       "Cadastro de atestados",
@@ -13,25 +17,33 @@ export const projects = [
       "Armazenamento seguro"
     ]
   },
+
   {
     id: "web-scraping",
-    title: "Ferramenta de Web Scraping",
-    description: "Automação de coleta de dados usando Python.",
-    longDescription:
-      "Ferramenta desenvolvida para coleta automatizada de dados em Fichas Técnicas dos CIRs, com processamento e organização das informações para integração com outros sistemas.",
+    title: "Automação de Coleta de Dados (Web Scraping)",
+    problem:
+      "Coleta manual de dados técnicos em múltiplas fontes, com alto tempo operacional e risco de inconsistência.",
+    solution:
+      "Desenvolvimento de robô em Python utilizando Selenium para automatizar a extração, validação e estruturação dos dados.",
+    result:
+      "Redução significativa do tempo de coleta e padronização das informações para integração com sistemas internos.",
     technologies: ["Python", "Selenium"],
     features: [
       "Coleta automatizada de dados",
       "Processamento e validação",
-      "Integração com WF"
+      "Integração com sistemas"
     ]
   },
+
   {
     id: "todo-list",
     title: "ToDo List",
-    description: "Aplicação interativa para controle de tarefas.",
-    longDescription:
-      "Aplicação desenvolvida em React para criação, organização e acompanhamento de tarefas, com foco em usabilidade e produtividade.",
+    problem:
+      "Dificuldade na organização e acompanhamento de tarefas do dia a dia.",
+    solution:
+      "Desenvolvimento de aplicação em React para gerenciamento de tarefas com foco em usabilidade e produtividade.",
+    result:
+      "Melhoria na organização pessoal e visualização clara das tarefas e prioridades.",
     technologies: ["React"],
     features: [
       "Criação de tarefas",
@@ -41,15 +53,18 @@ export const projects = [
   },
 
   /* =========================
-     NOVOS PRODUTOS
+     PROJETOS CORPORATIVOS
   ========================= */
 
   {
     id: "agilead-cnaes-estabelecimentos",
     title: "Agilead - CNAEs e Estabelecimentos",
-    description: "Plataforma para consulta de CNAEs e respectivos Estabelecimentos.",
-    longDescription:
-      "Sistema corporativo desenvolvido para facilitar a consulta, organização e análise de CNAEs e dados de estabelecimentos, auxiliando decisões administrativas e estratégicas.",
+    problem:
+      "Dificuldade na consulta e organização de dados de CNAEs e estabelecimentos para análise administrativa.",
+    solution:
+      "Desenvolvimento de sistema com Laravel e API REST para centralizar e facilitar a consulta e análise dessas informações.",
+    result:
+      "Melhoria na tomada de decisão e organização de dados estratégicos.",
     technologies: ["Laravel", "MySQL", "API REST"],
     features: [
       "Consulta de CNAEs",
@@ -57,12 +72,16 @@ export const projects = [
       "Organização e análise de dados"
     ]
   },
+
   {
     id: "leaderagro-controle-lavroura",
-    title: "LeaderAgro - Controle de Lavroura",
-    description: "Sistema para gestão e controle de lavouras agrícolas.",
-    longDescription:
-      "Ferramenta desenvolvida para controle de lavouras, permitindo o acompanhamento de atividades agrícolas, organização de dados produtivos e suporte à tomada de decisão no campo.",
+    title: "LeaderAgro - Controle de Lavoura",
+    problem:
+      "Falta de controle e organização das atividades agrícolas e dados produtivos.",
+    solution:
+      "Desenvolvimento de sistema para registro e acompanhamento de atividades agrícolas utilizando Laravel.",
+    result:
+      "Melhor organização das informações e suporte à tomada de decisão no campo.",
     technologies: ["Laravel", "MySQL"],
     features: [
       "Controle de lavouras",
@@ -70,12 +89,16 @@ export const projects = [
       "Gestão de informações produtivas"
     ]
   },
+
   {
     id: "colegio-poiese-controle-escolar",
     title: "Colégio Poiése - Controle Escolar",
-    description: "Sistema de controle de entrada e saída de alunos.",
-    longDescription:
-      "Plataforma escolar desenvolvida para controle de entrada e saída de alunos, garantindo segurança e rastreabilidade das informações, com validação por responsáveis.",
+    problem:
+      "Necessidade de controle seguro da entrada e saída de alunos.",
+    solution:
+      "Desenvolvimento de sistema para registro e validação de acesso de alunos com autorização de responsáveis.",
+    result:
+      "Aumento da segurança e rastreabilidade das informações escolares.",
     technologies: ["Laravel", "MySQL"],
     features: [
       "Controle de entrada e saída",
@@ -83,27 +106,81 @@ export const projects = [
       "Registro seguro de informações"
     ]
   },
+
+  /* =========================
+     PROJETO DESTAQUE (SaaS)
+  ========================= */
+
   {
     id: "salomix-saas-gestao-saloes",
     title: "Salomix - SaaS de Gestão para Salões",
-    description: "SaaS multi-tenant desenvolvido com Lovable + Supabase.",
-    longDescription:
-      "Aplicação SaaS multi-tenant arquitetada utilizando Lovable como camada de aceleração de frontend (React) e Supabase como Backend-as-a-Service (Auth, PostgreSQL e Row Level Security). O projeto simula um ambiente real de gestão para salões, com isolamento de dados por empresa, controle de roles e estrutura preparada para crescimento horizontal e expansão modular. A escolha por Lovable permitiu foco na modelagem arquitetural e regras de negócio, enquanto o Supabase garantiu segurança no nível do banco via RLS.",
+    problem:
+      "Pequenos negócios possuem dificuldade em gerenciar operações, clientes e finanças de forma organizada e escalável.",
+    solution:
+      "Desenvolvimento de SaaS multi-tenant utilizando Lovable (React) e Supabase, com autenticação, isolamento de dados por empresa (Row Level Security) e controle de permissões.",
+    result:
+      "Estrutura escalável para múltiplos clientes, garantindo segurança e separação de dados com base sólida para crescimento do produto.",
     technologies: [
       "Lovable (React)",
-      "Supabase (Auth + PostgreSQL)",
+      "Supabase",
+      "PostgreSQL",
       "Row Level Security (RLS)",
       "Zustand",
       "React Query"
     ],
     features: [
       "Arquitetura SaaS multi-tenant",
-      "Supabase Auth (Email/Password)",
-      "Isolamento de dados via RLS",
-      "Criação automática de empresa no cadastro",
-      "Controle de roles (admin/funcionário)",
-      "Gestão financeira e de serviços",
-      "Rotas protegidas com controle reativo de sessão"
+      "Autenticação de usuários",
+      "Isolamento de dados por empresa",
+      "Controle de permissões",
+      "Gestão de serviços e finanças"
+    ]
+  },
+
+  /* =========================
+     PROJETO ESTRATÉGICO (IA)
+  ========================= */
+
+  {
+    id: "automacao-planejamento-diario",
+    title: "Agente de Planejamento Diário com IA",
+    problem:
+      "Dificuldade em organizar atividades pessoais e profissionais com eventos recorrentes e variações semanais, gerando esquecimentos e falta de consistência.",
+    solution:
+      "Desenvolvimento de automação com n8n integrada ao Telegram para gerar um briefing diário inteligente, considerando regras condicionais como eventos quinzenais e compromissos fixos.",
+    result:
+      "Aumento de disciplina, redução de esquecimentos e visão clara das atividades diárias e semanais.",
+    technologies: ["n8n", "Telegram Bot API", "JavaScript (Function Node)"],
+    features: [
+      "Geração automática de cronograma diário",
+      "Substituição dinâmica de atividades (ex: futebol quinzenal)",
+      "Envio de briefing formatado com ícones",
+      "Lembretes automáticos de compromissos",
+      "Regras condicionais baseadas em datas"
+    ]
+  },
+  {
+    id: "agente-financeiro-ia",
+    title: "Agente Financeiro com IA via Telegram",
+    problem:
+      "Controle financeiro manual exige preenchimento de dados e organização constante, dificultando consistência e análise.",
+    solution:
+      "Criação de agente automatizado utilizando n8n e IA (Grok) para interpretar mensagens em linguagem natural, classificar transações e registrar automaticamente em base de dados.",
+    result:
+      "Automação completa do controle financeiro, com registro instantâneo, redução de esforço manual e acesso rápido a análises financeiras.",
+    technologies: [
+      "n8n",
+      "Grok AI (xAI API)",
+      "Google Sheets",
+      "Telegram Bot API"
+    ],
+    features: [
+      "Registro financeiro via linguagem natural",
+      "Classificação automática de receitas e despesas",
+      "Extração de dados estruturados",
+      "Resumo financeiro por período",
+      "Cálculo automático de saldo e categorias",
+      "Identificação de usuário nas transações"
     ]
   }
 ];
