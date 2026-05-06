@@ -5,12 +5,23 @@ export function ProjectCard({ project }) {
     <div className="project card">
       <div className="project-content">
         <h3>{project.title}</h3>
-        <p>{project.description}</p>
+
+        <p>
+          <strong>Problema:</strong> {project.problem}
+        </p>
+
+        <p>
+          <strong>Solução:</strong> {project.solution}
+        </p>
+
+        <p>
+          <strong>Resultado:</strong> {project.result}
+        </p>
       </div>
 
-      {project.techs && (
+      {project.technologies && (
         <div className="tech-stack">
-          {project.techs.map((tech, index) => (
+          {project.technologies.map((tech, index) => (
             <span key={index} className="badge">
               {tech}
             </span>
