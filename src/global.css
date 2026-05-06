@@ -223,6 +223,7 @@ main {
     padding: 0.45rem 1.2rem;
     border-radius: 6px;
     transition: background-color 0.2s ease;
+    margin-top: 1.2rem;
 }
 
 .project.card .btn:hover {
