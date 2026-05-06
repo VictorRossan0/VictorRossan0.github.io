@@ -190,6 +190,11 @@ main {
     margin-bottom: 1rem;
 }
 
+.project.card strong {
+    color: #f8fafc;
+    font-weight: 600;
+}
+
 .project.card:hover {
     transform: translateY(-6px) scale(1.01);
     box-shadow: 0 12px 30px rgba(56, 189, 248, 0.2);
