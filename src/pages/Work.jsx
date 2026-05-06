@@ -8,24 +8,13 @@ export function Work() {
       <section className="content">
         <h2 className="text-center mb-3">Projetos</h2>
 
-        <p className="text-center mb-4">
-          💡 Experiência prática com sistemas críticos, automações inteligentes e arquitetura multi-tenant.
-        </p>
-
-        <p className="text-center mb-3">
-          Projetos focados em backend, APIs, automação e soluções orientadas a problemas reais de negócio.
-        </p>
-
-        <p className="text-center mb-4">
-          Projetos que vão desde sistemas corporativos até automações com IA e arquiteturas SaaS escaláveis.
-        </p>
-
-        <p className="text-center mb-5 text-muted">
-          * Parte dos projetos não possui interface pública devido a políticas internas e confidencialidade.
+        <p className="text-center mb-5">
+          Projetos focados em backend, automação, APIs, integração de sistemas
+          e soluções orientadas a problemas reais de negócio.
         </p>
 
         <div className="projects">
-          {projects.map(project => (
+          {projects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}
         </div>
