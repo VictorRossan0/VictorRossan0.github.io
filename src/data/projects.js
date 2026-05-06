@@ -2,185 +2,132 @@
 
 export const projects = [
   {
+    id: "betanalytics",
+    title: "BetAnalytics — Plataforma de Dados do Brasileirão",
+    problem:
+      "Necessidade de centralizar e analisar dados do Brasileirão Série A por rodada, incluindo resultados, escanteios, cartões e métricas esportivas.",
+    solution:
+      "Desenvolvimento de uma plataforma web com dashboards, filtros e estrutura de dados para acompanhamento estatístico do campeonato.",
+    result:
+      "Organização dos dados esportivos em uma interface visual, facilitando análise por rodada e evolução futura do projeto.",
+    technologies: ["React", "TypeScript", "Supabase", "PostgreSQL", "n8n"],
+    features: [
+      "Dashboard de dados esportivos",
+      "Análise por rodada",
+      "Estruturação de dados no Supabase",
+      "Filtros e visualização de métricas",
+      "Base preparada para automações futuras"
+    ],
+    links: {
+      demo: "https://analyticsbrasileirao.lovable.app/",
+      github: "https://github.com/VictorRossan0/bet-insights-hub"
+    }
+  },
+
+  {
     id: "gestao-atestados",
     title: "Sistema de Gestão de Atestados",
     problem:
-      "Processo manual e descentralizado para envio e validação de atestados médicos, gerando retrabalho e risco de inconsistência de dados.",
+      "Processo manual e descentralizado para envio, validação e controle de atestados médicos, gerando retrabalho e risco de inconsistência.",
     solution:
-      "Desenvolvimento de sistema backend com Laravel para centralizar o envio, análise e aprovação de atestados, garantindo controle e rastreabilidade das informações.",
+      "Desenvolvimento de sistema web em Laravel para centralizar cadastro, análise, aprovação/reprovação, upload de documentos e controle por perfis.",
     result:
-      "Melhoria na organização dos dados, redução de erros operacionais e maior eficiência no fluxo de validação.",
-    technologies: ["Laravel", "MySQL"],
+      "Melhoria na organização das informações, redução de erros operacionais e maior rastreabilidade no fluxo de validação.",
+    technologies: ["Laravel", "PHP", "MySQL", "Bootstrap", "Laravel Sanctum"],
     features: [
       "Cadastro de atestados",
       "Aprovação e reprovação",
-      "Armazenamento seguro"
-    ]
+      "Upload de documentos",
+      "Controle de perfis",
+      "Análise de absenteísmo"
+    ],
+    links: {
+      portfolio: "https://victorrossano-dev.netlify.app/projects/gestao-atestados",
+      github: "https://github.com/VictorRossan0/gestao_atestados"
+    }
   },
-
-  {
-    id: "web-scraping",
-    title: "Automação de Coleta de Dados (Web Scraping)",
-    problem:
-      "Coleta manual de dados técnicos em múltiplas fontes, com alto tempo operacional e risco de inconsistência.",
-    solution:
-      "Desenvolvimento de robô em Python utilizando Selenium para automatizar a extração, validação e estruturação dos dados.",
-    result:
-      "Redução significativa do tempo de coleta e padronização das informações para integração com sistemas internos.",
-    technologies: ["Python", "Selenium"],
-    features: [
-      "Coleta automatizada de dados",
-      "Processamento e validação",
-      "Integração com sistemas"
-    ]
-  },
-
-  {
-    id: "todo-list",
-    title: "ToDo List",
-    problem:
-      "Dificuldade na organização e acompanhamento de tarefas do dia a dia.",
-    solution:
-      "Desenvolvimento de aplicação em React para gerenciamento de tarefas com foco em usabilidade e produtividade.",
-    result:
-      "Melhoria na organização pessoal e visualização clara das tarefas e prioridades.",
-    technologies: ["React"],
-    features: [
-      "Criação de tarefas",
-      "Marcação de tarefas concluídas",
-      "Organização por prioridade"
-    ]
-  },
-
-  /* =========================
-     PROJETOS CORPORATIVOS
-  ========================= */
 
   {
     id: "agilead-cnaes-estabelecimentos",
-    title: "Agilead - CNAEs e Estabelecimentos",
+    title: "Agilead — CNAEs e Estabelecimentos",
     problem:
-      "Dificuldade na consulta e organização de dados de CNAEs e estabelecimentos para análise administrativa.",
+      "Dificuldade na consulta, filtragem e organização de dados empresariais para análise de mercado e geração de leads.",
     solution:
-      "Desenvolvimento de sistema com Laravel e API REST para centralizar e facilitar a consulta e análise dessas informações.",
+      "Desenvolvimento de dashboard em Laravel com filtros por CNAE, estado e município, integrando dados empresariais para apoiar prospecção e análise.",
     result:
-      "Melhoria na tomada de decisão e organização de dados estratégicos.",
-    technologies: ["Laravel", "MySQL", "API REST"],
+      "Consulta mais rápida e organizada de estabelecimentos, com filtros dinâmicos e visualização estruturada para tomada de decisão.",
+    technologies: ["Laravel", "PHP", "MySQL", "Bootstrap", "jQuery", "APIs REST"],
     features: [
-      "Consulta de CNAEs",
-      "Gestão de estabelecimentos",
-      "Organização e análise de dados"
-    ]
-  },
-
-  {
-    id: "leaderagro-controle-lavroura",
-    title: "LeaderAgro - Controle de Lavoura",
-    problem:
-      "Falta de controle e organização das atividades agrícolas e dados produtivos.",
-    solution:
-      "Desenvolvimento de sistema para registro e acompanhamento de atividades agrícolas utilizando Laravel.",
-    result:
-      "Melhor organização das informações e suporte à tomada de decisão no campo.",
-    technologies: ["Laravel", "MySQL"],
-    features: [
-      "Controle de lavouras",
-      "Registro de atividades agrícolas",
-      "Gestão de informações produtivas"
-    ]
-  },
-
-  {
-    id: "colegio-poiese-controle-escolar",
-    title: "Colégio Poiése - Controle Escolar",
-    problem:
-      "Necessidade de controle seguro da entrada e saída de alunos.",
-    solution:
-      "Desenvolvimento de sistema para registro e validação de acesso de alunos com autorização de responsáveis.",
-    result:
-      "Aumento da segurança e rastreabilidade das informações escolares.",
-    technologies: ["Laravel", "MySQL"],
-    features: [
-      "Controle de entrada e saída",
-      "Validação por responsáveis",
-      "Registro seguro de informações"
-    ]
-  },
-
-  /* =========================
-     PROJETO DESTAQUE (SaaS)
-  ========================= */
-
-  {
-    id: "salomix-saas-gestao-saloes",
-    title: "Salomix - SaaS de Gestão para Salões",
-    problem:
-      "Pequenos negócios possuem dificuldade em gerenciar operações, clientes e finanças de forma organizada e escalável.",
-    solution:
-      "Desenvolvimento de SaaS multi-tenant utilizando Lovable (React) e Supabase, com autenticação, isolamento de dados por empresa (Row Level Security) e controle de permissões.",
-    result:
-      "Estrutura escalável para múltiplos clientes, garantindo segurança e separação de dados com base sólida para crescimento do produto.",
-    technologies: [
-      "Lovable (React)",
-      "Supabase",
-      "PostgreSQL",
-      "Row Level Security (RLS)",
-      "Zustand",
-      "React Query"
+      "Dashboard de estabelecimentos",
+      "Filtros por CNAE, estado e município",
+      "Onboarding com preferências",
+      "Paginação de resultados",
+      "Estrutura preparada para integrações"
     ],
-    features: [
-      "Arquitetura SaaS multi-tenant",
-      "Autenticação de usuários",
-      "Isolamento de dados por empresa",
-      "Controle de permissões",
-      "Gestão de serviços e finanças"
-    ]
+    links: {
+      demo: "https://rdmti.com.br/agilead/login",
+      portfolio:
+        "https://victorrossano-dev.netlify.app/projects/agilead-cnaes-estabelecimentos"
+    }
   },
 
-  /* =========================
-     PROJETO ESTRATÉGICO (IA)
-  ========================= */
+  {
+    id: "nba-data-scraping-pipeline",
+    title: "NBA Data Scraping Pipeline",
+    problem:
+      "Coleta manual de estatísticas esportivas da NBA em diferentes fontes, dificultando análise e consolidação dos dados.",
+    solution:
+      "Criação de pipeline em Python para extração automatizada, processamento e consolidação de estatísticas em planilhas Excel.",
+    result:
+      "Automação da coleta e organização de dados esportivos, gerando arquivos estruturados para análise.",
+    technologies: ["Python", "Selenium", "OpenPyXL", "Pandas", "Web Scraping"],
+    features: [
+      "Coleta automatizada de dados",
+      "Processamento de estatísticas",
+      "Geração de planilhas Excel",
+      "Consolidação em múltiplas abas",
+      "Estrutura modular em Python"
+    ],
+    links: {
+      github: "https://github.com/VictorRossan0/nba-data-scraping-pipeline"
+    }
+  },
 
   {
     id: "automacao-planejamento-diario",
     title: "Agente de Planejamento Diário com IA",
     problem:
-      "Dificuldade em organizar atividades pessoais e profissionais com eventos recorrentes e variações semanais, gerando esquecimentos e falta de consistência.",
+      "Dificuldade em organizar atividades pessoais e profissionais com eventos recorrentes e variações semanais.",
     solution:
-      "Desenvolvimento de automação com n8n integrada ao Telegram para gerar um briefing diário inteligente, considerando regras condicionais como eventos quinzenais e compromissos fixos.",
+      "Desenvolvimento de automação com n8n integrada ao Telegram para gerar briefing diário inteligente com regras condicionais.",
     result:
-      "Aumento de disciplina, redução de esquecimentos e visão clara das atividades diárias e semanais.",
-    technologies: ["n8n", "Telegram Bot API", "JavaScript (Function Node)"],
+      "Melhoria na organização da rotina, redução de esquecimentos e visão clara das atividades diárias.",
+    technologies: ["n8n", "Telegram Bot API", "JavaScript", "IA"],
     features: [
-      "Geração automática de cronograma diário",
-      "Substituição dinâmica de atividades (ex: futebol quinzenal)",
-      "Envio de briefing formatado com ícones",
-      "Lembretes automáticos de compromissos",
-      "Regras condicionais baseadas em datas"
+      "Briefing diário automatizado",
+      "Regras condicionais por data",
+      "Envio via Telegram",
+      "Organização de rotina",
+      "Automação com IA"
     ]
   },
+
   {
     id: "agente-financeiro-ia",
     title: "Agente Financeiro com IA via Telegram",
     problem:
-      "Controle financeiro manual exige preenchimento de dados e organização constante, dificultando consistência e análise.",
+      "Controle financeiro manual exige preenchimento constante e dificulta organização das informações.",
     solution:
-      "Criação de agente automatizado utilizando n8n e IA (Grok) para interpretar mensagens em linguagem natural, classificar transações e registrar automaticamente em base de dados.",
+      "Criação de agente automatizado com n8n e IA para interpretar mensagens em linguagem natural, classificar transações e registrar dados.",
     result:
-      "Automação completa do controle financeiro, com registro instantâneo, redução de esforço manual e acesso rápido a análises financeiras.",
-    technologies: [
-      "n8n",
-      "Grok AI (xAI API)",
-      "Google Sheets",
-      "Telegram Bot API"
-    ],
+      "Redução do esforço manual no controle financeiro e maior rapidez no registro de receitas e despesas.",
+    technologies: ["n8n", "Grok AI", "Google Sheets", "Telegram Bot API"],
     features: [
-      "Registro financeiro via linguagem natural",
-      "Classificação automática de receitas e despesas",
-      "Extração de dados estruturados",
+      "Registro financeiro por linguagem natural",
+      "Classificação automática de transações",
+      "Integração com Google Sheets",
       "Resumo financeiro por período",
-      "Cálculo automático de saldo e categorias",
-      "Identificação de usuário nas transações"
+      "Automação via Telegram"
     ]
   }
 ];
