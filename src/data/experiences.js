@@ -14,21 +14,68 @@ export const experiences = [
             "Desenvolvimento de backend orientado a serviços, utilizando Laravel como API desacoplada."
         ]
     },
+
     {
         role: "Analista Desenvolvedor I",
         company: "GLOBAL HITSS",
         type: "Tempo integral",
-        period: "nov de 2018 - out de 2025 · 7 anos",
+        period: "out de 2022 - out de 2025 · 3 anos",
         location: "Híbrido · Campinas, SP",
-        stack: ["Laravel", "Python", "PostgreSQL", "MySQL"],
+        stack: ["Python", "Laravel", "PHP", "PostgreSQL", "MySQL", "Git", "APIs REST"],
         description: [
-            "Desenvolvimento e manutenção de aplicações backend utilizando Laravel e Python em sistemas corporativos.",
-            "Implementação de novas funcionalidades, integrações com APIs e melhorias contínuas em sistemas existentes.",
-            "Atuação em correção de bugs e resolução de problemas em produção, garantindo estabilidade e continuidade dos serviços.",
-            "Participação ativa em equipes ágeis, contribuindo em refinamentos, planejamento de sprints e melhorias de processo.",
-            "Escrita e manutenção de documentação técnica para suporte ao time e continuidade dos projetos.",
-            "Realização de testes unitários e de integração, garantindo qualidade e confiabilidade nas entregas.",
-            "Exploração e desenvolvimento de soluções de automação de processos utilizando ferramentas como n8n, com foco em aumento de produtividade e redução de tarefas manuais."
+            "Evolução interna para a área de desenvolvimento de software após trajetória em operações e formação em Ciência da Computação.",
+            "Desenvolvimento e manutenção de aplicações backend utilizando Python e Laravel em sistemas corporativos.",
+            "Criação de automações para otimização de processos operacionais, reduzindo tarefas manuais e aumentando eficiência das equipes.",
+            "Implementação de integrações com APIs REST e serviços externos, conectando sistemas e fluxos de dados.",
+            "Atuação em correção de bugs, refatoração e melhoria contínua de sistemas legados.",
+            "Utilização de bancos de dados MySQL e PostgreSQL para consultas, manutenção e apoio à evolução dos sistemas.",
+            "Participação em rotinas ágeis e colaboração com times técnicos na evolução de soluções internas."
+        ]
+    },
+
+    {
+        role: "Analista Backoffice II",
+        company: "GLOBAL HITSS",
+        type: "Tempo integral",
+        period: "jan de 2021 - set de 2022 · 1 ano e 9 meses",
+        location: "Presencial · Campinas, SP",
+        stack: ["Backoffice", "Telecom", "Excel", "Sistemas Corporativos", "SLA"],
+        description: [
+            "Análise e tratamento de contratos e circuitos de telecomunicações.",
+            "Interação com áreas internas para alinhamento e resolução de demandas operacionais.",
+            "Manipulação de planilhas e sistemas corporativos para cadastro e atualização de informações.",
+            "Tratamento de informações operacionais garantindo continuidade dos fluxos e cumprimento de SLA.",
+            "Apoio na melhoria contínua de processos internos e organização operacional."
+        ]
+    },
+
+    {
+        role: "Analista Backoffice I",
+        company: "GLOBAL HITSS",
+        type: "Tempo integral",
+        period: "jan de 2020 - dez de 2020 · 1 ano",
+        location: "Presencial · Campinas, SP",
+        stack: ["Backoffice", "Telecom", "Excel", "Processos Operacionais"],
+        description: [
+            "Atuação em rotinas operacionais e administrativas relacionadas ao backoffice de telecomunicações.",
+            "Controle e atualização de informações em sistemas corporativos.",
+            "Tratamento de demandas operacionais e suporte aos fluxos internos da área.",
+            "Apoio às equipes internas na organização e acompanhamento de processos."
+        ]
+    },
+
+    {
+        role: "Assistente Backoffice",
+        company: "GLOBAL HITSS",
+        type: "Tempo integral",
+        period: "nov de 2018 - dez de 2019 · 1 ano e 2 meses",
+        location: "Presencial · Campinas, SP",
+        stack: ["Backoffice", "Rotinas Administrativas", "Excel", "Sistemas Corporativos"],
+        description: [
+            "Apoio às rotinas administrativas e operacionais da área de backoffice.",
+            "Atualização e controle de informações em sistemas internos.",
+            "Organização de dados, conferência de informações e suporte às demandas operacionais.",
+            "Atendimento às necessidades internas da operação contribuindo para continuidade dos processos."
         ]
     }
 ];
